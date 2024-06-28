@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+p {
+  font-size: 18px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,7 +17,12 @@
   }
 }
 
-.App-header {
+.main-header {
+  font-size: 35px;
+	font-weight: 700;
+}
+
+.main-wrapper {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,12 +31,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 5vw;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.result {
+  cursor: pointer;
+}
+
+.result img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.result h4 {
+  margin:10px 0 50px 0;
+}
+ 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
