@@ -2,11 +2,11 @@
 import React, { useState } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-
-import Search  from './Search';
 import axios from 'axios';
-import Result from './Result';
-import Detail from "./Details";
+
+import Search  from './components/Search';
+import Result from './components/Result';
+import Detail from "./components/Details";
 function App() {
   const [state, setState] = useState({
     search: '',
