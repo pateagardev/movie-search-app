@@ -40,15 +40,34 @@ p {
 
 .result {
   cursor: pointer;
+  text-align: left;
 }
 
 .result img {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .result h4 {
-  margin:10px 0 50px 0;
+  padding: 20px 0;
+}
+
+.search-innput {
+	position: relative;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: #ff7f50;
+  border: 0;
+  height: 100%;
+  padding: 0 20px;
 }
  
 @keyframes App-logo-spin {

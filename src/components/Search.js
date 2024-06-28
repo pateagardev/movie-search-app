@@ -1,9 +1,18 @@
-import React from "react";
+// components/Search.js
+import React from 'react';
+import { FaBeer, FaSearch } from "react-icons/fa";
 
-function Search({handleInput, SearchResult}) {
+function Search({ handleInput, searchResult }) {
   return (
-    <div className="search-innput mt-5 mb-5">
-      <input type="text" name='movie' className="w-50 p-2 " placeholder="Seach Movies" onChange={handleInput} onKeyDown={SearchResult} ></input>
+    <div className="search-innput mt-5">
+      <input 
+        type="text"
+        placeholder="Seach Movies"
+        className="w-100 p-2 "
+        onChange={handleInput}
+        onKeyPress={searchResult}
+      />
+      <button onClick={searchResult} className="search-button"><FaSearch /></button>
     </div>
   );
 }
